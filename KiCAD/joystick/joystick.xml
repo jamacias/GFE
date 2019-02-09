@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>D:/ULL/TFG/KiCAD/joystick/joystick.sch</source>
+    <date>07/05/2018 23:23:21</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Circuito interior del joystick</title>
+        <company/>
+        <rev>1</rev>
+        <date/>
+        <source>joystick.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="R1">
+      <value>2k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ACB559B</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>2k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ACB561B</tstamp>
+    </comp>
+    <comp ref="RV1">
+      <value>0-100k</value>
+      <libsource lib="device" part="POT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ACB563B</tstamp>
+    </comp>
+    <comp ref="RV2">
+      <value>0-100k</value>
+      <libsource lib="device" part="POT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ACB5673</tstamp>
+    </comp>
+    <comp ref="RV3">
+      <value>0-100k</value>
+      <libsource lib="device" part="POT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ACB56A1</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_Push</value>
+      <libsource lib="switches" part="SW_Push"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ACB56EA</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_Push</value>
+      <libsource lib="switches" part="SW_Push"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ACB5805</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>DB15_Male</value>
+      <libsource lib="conn" part="DB15_Male"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ACB5952</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="conn" part="DB15_Male">
+      <description>15-pin male D-SUB connector (low-density/2 columns)</description>
+      <footprints>
+        <fp>DB*M*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">DB15_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P111" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+        <pin num="13" name="P13" type="passive"/>
+        <pin num="14" name="P14" type="passive"/>
+        <pin num="15" name="P15" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="POT">
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">POT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <footprints>
+        <fp>*:R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="switches" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="conn">
+      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+    </library>
+    <library logical="switches">
+      <uri>C:\Program Files\KiCad\share\kicad\library\switches.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(J1-Pad9)">
+      <node ref="J1" pin="9"/>
+    </net>
+    <net code="2" name="Net-(J1-Pad11)">
+      <node ref="J1" pin="11"/>
+    </net>
+    <net code="3" name="Net-(J1-Pad10)">
+      <node ref="J1" pin="10"/>
+    </net>
+    <net code="4" name="Net-(J1-Pad12)">
+      <node ref="J1" pin="12"/>
+    </net>
+    <net code="5" name="Net-(J1-Pad5)">
+      <node ref="J1" pin="5"/>
+    </net>
+    <net code="6" name="Net-(J1-Pad14)">
+      <node ref="J1" pin="14"/>
+    </net>
+    <net code="7" name="Net-(J1-Pad15)">
+      <node ref="J1" pin="15"/>
+    </net>
+    <net code="8" name="Net-(J1-Pad8)">
+      <node ref="J1" pin="8"/>
+    </net>
+    <net code="9" name="x_axis">
+      <node ref="RV1" pin="2"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="10" name="button1">
+      <node ref="J1" pin="2"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="11" name="5V">
+      <node ref="RV2" pin="1"/>
+      <node ref="RV3" pin="1"/>
+      <node ref="RV1" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="12" name="GND">
+      <node ref="SW2" pin="2"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="RV3" pin="3"/>
+      <node ref="J1" pin="4"/>
+      <node ref="RV2" pin="3"/>
+      <node ref="RV1" pin="3"/>
+    </net>
+    <net code="13" name="z_axis">
+      <node ref="RV3" pin="2"/>
+      <node ref="J1" pin="13"/>
+    </net>
+    <net code="14" name="button2">
+      <node ref="SW2" pin="1"/>
+      <node ref="J1" pin="7"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="15" name="y_axis">
+      <node ref="RV2" pin="2"/>
+      <node ref="J1" pin="6"/>
+    </net>
+  </nets>
+</export>

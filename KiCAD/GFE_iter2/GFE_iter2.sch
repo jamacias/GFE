@@ -1,0 +1,780 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:arduino
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ESP8266
+LIBS:gy-271
+LIBS:gy-gps6mv2
+LIBS:hc-sr04
+LIBS:ims-1
+LIBS:tge589a
+LIBS:sw_dpdt_msm
+LIBS:GFE_iter2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "Conexionado de los módulos en la iteración 2"
+Date ""
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L HC-SR04 U13
+U 1 1 5ACA6762
+P 7450 5150
+F 0 "U13" V 7000 5350 60  0000 C CNN
+F 1 "HC-SR04" V 7100 5200 60  0000 C CNN
+F 2 "" H 7450 5150 60  0000 C CNN
+F 3 "" H 7450 5150 60  0000 C CNN
+	1    7450 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L GY-GPS6MV2 U15
+U 1 1 5ACA7228
+P 2350 2850
+F 0 "U15" H 2100 2600 60  0000 C CNN
+F 1 "GY-GPS6MV2" H 2350 3150 60  0000 C CNN
+F 2 "" H 2500 2850 60  0001 C CNN
+F 3 "" H 2500 2850 60  0001 C CNN
+	1    2350 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L IMS-1 U11
+U 1 1 5ACA74DF
+P 8600 5650
+F 0 "U11" H 8400 5250 60  0000 C CNN
+F 1 "IMS-1 (B)" H 8600 6050 60  0000 C CNN
+F 2 "" H 8350 5300 60  0001 C CNN
+F 3 "" H 8350 5300 60  0001 C CNN
+	1    8600 5650
+	0    -1   1    0   
+$EndComp
+Text GLabel 2500 3450 3    60   Input ~ 0
+GND
+Text GLabel 3350 7650 0    60   Input ~ 0
+5V
+Text GLabel 3350 6950 0    60   Input ~ 0
+GND
+Text GLabel 2200 3450 3    60   Input ~ 0
+5V
+Text GLabel 3350 7850 0    60   Input ~ 0
+12V
+$Comp
+L LM317_3PinPackage U8
+U 1 1 5ACB002F
+P 11500 1350
+F 0 "U8" H 11350 1475 50  0000 C CNN
+F 1 "LM317T " H 11300 1550 50  0000 L CNN
+F 2 "" H 11500 1600 50  0001 C CIN
+F 3 "" H 11500 1350 50  0001 C CNN
+	1    11500 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5ACB0035
+P 11900 1550
+F 0 "R1" V 11980 1550 50  0000 C CNN
+F 1 "270" V 11900 1550 50  0000 C CNN
+F 2 "" V 11830 1550 50  0001 C CNN
+F 3 "" H 11900 1550 50  0001 C CNN
+	1    11900 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5ACB003B
+P 11900 1950
+F 0 "R2" V 11980 1950 50  0000 C CNN
+F 1 "2.7k" V 11900 1950 50  0000 C CNN
+F 2 "" V 11830 1950 50  0001 C CNN
+F 3 "" H 11900 1950 50  0001 C CNN
+	1    11900 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 5ACB0043
+P 11900 2150
+F 0 "#PWR2" H 11900 1900 50  0001 C CNN
+F 1 "GND" H 11900 2000 50  0000 C CNN
+F 2 "" H 11900 2150 50  0001 C CNN
+F 3 "" H 11900 2150 50  0001 C CNN
+	1    11900 2150
+	1    0    0    -1  
+$EndComp
+Text GLabel 12000 1350 2    60   Input ~ 0
+13V8
+Text GLabel 1800 4400 3    60   Input ~ 0
+5V
+Text GLabel 1900 4400 3    60   Input ~ 0
+GND
+$Comp
+L GND #PWR1
+U 1 1 5ACB65DE
+P 8750 1800
+F 0 "#PWR1" H 8750 1550 50  0001 C CNN
+F 1 "GND" H 8750 1650 50  0000 C CNN
+F 2 "" H 8750 1800 50  0001 C CNN
+F 3 "" H 8750 1800 50  0001 C CNN
+	1    8750 1800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8800 5200
+NoConn ~ 8900 5200
+Text GLabel 8400 6100 3    60   Input ~ 0
+12V
+Text GLabel 8500 6100 3    60   Input ~ 0
+GND
+Text GLabel 8400 5200 1    60   Input ~ 0
+GND
+NoConn ~ 8300 5200
+$Comp
+L IMS-1 U12
+U 1 1 5ACBB6FF
+P 9550 5650
+F 0 "U12" H 9350 5250 60  0000 C CNN
+F 1 "IMS-1 (A)" H 9550 6050 60  0000 C CNN
+F 2 "" H 9300 5300 60  0001 C CNN
+F 3 "" H 9300 5300 60  0001 C CNN
+	1    9550 5650
+	0    -1   1    0   
+$EndComp
+NoConn ~ 9750 5200
+NoConn ~ 9850 5200
+Text GLabel 9350 6100 3    60   Input ~ 0
+12V
+Text GLabel 9450 6100 3    60   Input ~ 0
+GND
+Text GLabel 9350 5200 1    60   Input ~ 0
+GND
+NoConn ~ 9250 5200
+$Comp
+L GY-271 U14
+U 1 1 5ACBE875
+P 2000 3950
+F 0 "U14" H 1900 3650 50  0000 C CNN
+F 1 "GY-271" H 2000 4300 50  0000 C CNN
+F 2 "" H 1500 3700 50  0001 C CNN
+F 3 "" H 1500 3700 50  0001 C CNN
+	1    2000 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TGE589A U5
+U 1 1 5ACBEC3D
+P 8750 7000
+F 0 "U5" H 8650 6700 50  0000 C CNN
+F 1 "TGE589A" H 8750 7350 50  0000 C CNN
+F 2 "" H 8250 6750 50  0001 C CNN
+F 3 "" H 8250 6750 50  0001 C CNN
+	1    8750 7000
+	0    -1   1    0   
+$EndComp
+NoConn ~ 8850 6550
+NoConn ~ 8750 6550
+NoConn ~ 8650 6550
+$Comp
+L TGE589A U6
+U 1 1 5ACBF270
+P 9700 7000
+F 0 "U6" H 9600 6700 50  0000 C CNN
+F 1 "TGE589A" H 9700 7350 50  0000 C CNN
+F 2 "" H 9200 6750 50  0001 C CNN
+F 3 "" H 9200 6750 50  0001 C CNN
+	1    9700 7000
+	0    -1   1    0   
+$EndComp
+NoConn ~ 9800 6550
+NoConn ~ 9700 6550
+NoConn ~ 9600 6550
+$Comp
+L DB15_Female J2
+U 1 1 5ACC36FB
+P 2650 5650
+F 0 "J2" V 2850 6250 50  0000 C CNN
+F 1 "DB15_Female" V 2850 5650 50  0000 C CNN
+F 2 "" H 2650 5650 50  0001 C CNN
+F 3 "" H 2650 5650 50  0001 C CNN
+	1    2650 5650
+	-1   0    0    1   
+$EndComp
+Text GLabel 2950 6350 2    60   Input ~ 0
+5V
+Text GLabel 2950 5750 2    60   Input ~ 0
+GND
+Text GLabel 5950 3850 2    60   Input ~ 0
+D5
+Wire Wire Line
+	3350 3750 2400 3750
+Wire Wire Line
+	2300 3850 3350 3850
+Wire Wire Line
+	2300 3850 2300 3450
+Wire Wire Line
+	2400 3750 2400 3450
+Wire Wire Line
+	11900 1700 11900 1800
+Connection ~ 11900 1750
+Wire Wire Line
+	11900 2150 11900 2100
+Wire Wire Line
+	11500 1650 11500 1750
+Wire Wire Line
+	11900 1350 11900 1400
+Connection ~ 11900 1350
+Wire Wire Line
+	10900 1350 11200 1350
+Wire Wire Line
+	8750 1750 8750 1800
+Wire Wire Line
+	11500 1750 11900 1750
+Wire Wire Line
+	11800 1350 12000 1350
+Wire Wire Line
+	5950 4850 8500 4850
+Wire Wire Line
+	8500 4850 8500 5200
+Wire Wire Line
+	5950 4550 8600 4550
+Wire Wire Line
+	8600 4550 8600 5200
+Wire Wire Line
+	5950 4450 8700 4450
+Wire Wire Line
+	8700 4450 8700 5200
+Wire Wire Line
+	5950 4750 9450 4750
+Wire Wire Line
+	9450 4750 9450 5200
+Wire Wire Line
+	5950 4350 9550 4350
+Wire Wire Line
+	9550 4350 9550 5200
+Wire Wire Line
+	5950 4250 9650 4250
+Wire Wire Line
+	9650 4250 9650 5200
+Wire Wire Line
+	8550 6550 8550 6450
+Wire Wire Line
+	8550 6450 8700 6450
+Wire Wire Line
+	8700 6450 8700 6100
+Wire Wire Line
+	8800 6100 8800 6450
+Wire Wire Line
+	8800 6450 8950 6450
+Wire Wire Line
+	8950 6450 8950 6550
+Wire Wire Line
+	9500 6550 9500 6450
+Wire Wire Line
+	9500 6450 9650 6450
+Wire Wire Line
+	9650 6450 9650 6100
+Wire Wire Line
+	9750 6100 9750 6450
+Wire Wire Line
+	9750 6450 9900 6450
+Wire Wire Line
+	9900 6450 9900 6550
+Text GLabel 2950 5150 2    60   Input ~ 0
+D6
+Text GLabel 5950 3950 2    60   Input ~ 0
+D6
+NoConn ~ 2950 4950
+NoConn ~ 2950 5050
+NoConn ~ 2950 5250
+NoConn ~ 2950 5550
+NoConn ~ 2950 5650
+NoConn ~ 2950 6050
+NoConn ~ 2950 6250
+Text GLabel 7250 5300 0    60   Input ~ 0
+5V
+Text GLabel 7250 5000 0    60   Input ~ 0
+GND
+$Comp
+L HC-SR04 U10
+U 1 1 5ACBB243
+P 7450 5700
+F 0 "U10" V 7000 5900 60  0000 C CNN
+F 1 "HC-SR04" V 7100 5750 60  0000 C CNN
+F 2 "" H 7450 5700 60  0000 C CNN
+F 3 "" H 7450 5700 60  0000 C CNN
+	1    7450 5700
+	-1   0    0    1   
+$EndComp
+Text GLabel 7250 5850 0    60   Input ~ 0
+5V
+Text GLabel 7250 5550 0    60   Input ~ 0
+GND
+$Comp
+L HC-SR04 U9
+U 1 1 5ACBB2C9
+P 7450 6250
+F 0 "U9" V 7000 6450 60  0000 C CNN
+F 1 "HC-SR04" V 7100 6300 60  0000 C CNN
+F 2 "" H 7450 6250 60  0000 C CNN
+F 3 "" H 7450 6250 60  0000 C CNN
+	1    7450 6250
+	-1   0    0    1   
+$EndComp
+Text GLabel 7250 6400 0    60   Input ~ 0
+5V
+Text GLabel 7250 6100 0    60   Input ~ 0
+GND
+$Comp
+L HC-SR04 U7
+U 1 1 5ACBB2D1
+P 7450 6800
+F 0 "U7" V 7000 7000 60  0000 C CNN
+F 1 "HC-SR04" V 7100 6850 60  0000 C CNN
+F 2 "" H 7450 6800 60  0000 C CNN
+F 3 "" H 7450 6800 60  0000 C CNN
+	1    7450 6800
+	-1   0    0    1   
+$EndComp
+Text GLabel 7250 6950 0    60   Input ~ 0
+5V
+Text GLabel 7250 6650 0    60   Input ~ 0
+GND
+NoConn ~ 3350 3550
+NoConn ~ 3350 3650
+NoConn ~ 3350 4150
+NoConn ~ 3350 4250
+NoConn ~ 3350 4350
+NoConn ~ 3350 4450
+NoConn ~ 3350 5150
+NoConn ~ 3350 5350
+NoConn ~ 3350 5450
+NoConn ~ 3350 5550
+NoConn ~ 3350 5650
+NoConn ~ 3350 5750
+NoConn ~ 3350 5850
+NoConn ~ 3350 5950
+NoConn ~ 3350 6050
+NoConn ~ 3350 6150
+NoConn ~ 3350 6250
+NoConn ~ 3350 6350
+NoConn ~ 3350 6450
+NoConn ~ 3350 6650
+NoConn ~ 3350 6750
+NoConn ~ 3350 7050
+NoConn ~ 3350 7150
+NoConn ~ 3350 7250
+NoConn ~ 3350 7350
+NoConn ~ 3350 7450
+NoConn ~ 3350 7550
+NoConn ~ 3350 7750
+NoConn ~ 5950 7850
+NoConn ~ 5950 7750
+NoConn ~ 5950 7650
+NoConn ~ 5950 7550
+NoConn ~ 5950 7250
+NoConn ~ 5950 7150
+NoConn ~ 5950 7050
+NoConn ~ 5950 6950
+NoConn ~ 5950 6850
+NoConn ~ 5950 6750
+NoConn ~ 5950 4650
+NoConn ~ 5950 4150
+NoConn ~ 5950 3750
+NoConn ~ 5950 3650
+NoConn ~ 5950 3550
+NoConn ~ 4900 3100
+NoConn ~ 4800 3100
+NoConn ~ 4700 3100
+NoConn ~ 4600 3100
+NoConn ~ 4500 3100
+NoConn ~ 4400 3100
+Wire Wire Line
+	2100 4550 3350 4550
+Wire Wire Line
+	2000 4650 3350 4650
+NoConn ~ 3350 5250
+Wire Wire Line
+	2950 5450 3200 5450
+Wire Wire Line
+	3200 5450 3200 5050
+Wire Wire Line
+	3200 5050 3350 5050
+Wire Wire Line
+	3350 4850 3300 4850
+Wire Wire Line
+	3300 4850 3300 5950
+Wire Wire Line
+	3300 5950 2950 5950
+Wire Wire Line
+	2950 5350 3150 5350
+Wire Wire Line
+	3150 5350 3150 4950
+Wire Wire Line
+	3150 4950 3350 4950
+Text GLabel 5950 4050 2    60   Input ~ 0
+D7
+Text GLabel 2950 6150 2    60   Input ~ 0
+D7
+Text GLabel 2950 5850 2    60   Input ~ 0
+D5
+Wire Wire Line
+	5950 4950 6950 4950
+Wire Wire Line
+	6950 4950 6950 5100
+Wire Wire Line
+	6950 5100 7250 5100
+Wire Wire Line
+	5950 5050 6900 5050
+Wire Wire Line
+	6900 5050 6900 5200
+Wire Wire Line
+	6900 5200 7250 5200
+Wire Wire Line
+	7250 5650 6850 5650
+Wire Wire Line
+	5950 5150 6850 5150
+Wire Wire Line
+	5950 5250 6800 5250
+Wire Wire Line
+	6800 5750 7250 5750
+Wire Wire Line
+	5950 5350 6750 5350
+Wire Wire Line
+	6750 6200 7250 6200
+Wire Wire Line
+	7250 6300 6700 6300
+Wire Wire Line
+	6700 5450 5950 5450
+Wire Wire Line
+	6650 6750 7250 6750
+Wire Wire Line
+	7250 6850 6600 6850
+Wire Wire Line
+	6850 5150 6850 5650
+Wire Wire Line
+	6800 5250 6800 5750
+Wire Wire Line
+	6750 5350 6750 6200
+Wire Wire Line
+	6700 6300 6700 5450
+Wire Wire Line
+	6650 6750 6650 5550
+Wire Wire Line
+	6650 5550 5950 5550
+Wire Wire Line
+	6600 6850 6600 5650
+Wire Wire Line
+	6600 5650 5950 5650
+$Comp
+L HC-SR04 U4
+U 1 1 5AFCE350
+P 7450 7350
+F 0 "U4" V 7000 7550 60  0000 C CNN
+F 1 "HC-SR04" V 7100 7400 60  0000 C CNN
+F 2 "" H 7450 7350 60  0000 C CNN
+F 3 "" H 7450 7350 60  0000 C CNN
+	1    7450 7350
+	-1   0    0    1   
+$EndComp
+Text GLabel 7250 7500 0    60   Input ~ 0
+5V
+Text GLabel 7250 7200 0    60   Input ~ 0
+GND
+$Comp
+L HC-SR04 U3
+U 1 1 5AFCE358
+P 7450 7900
+F 0 "U3" V 7000 8100 60  0000 C CNN
+F 1 "HC-SR04" V 7100 7950 60  0000 C CNN
+F 2 "" H 7450 7900 60  0000 C CNN
+F 3 "" H 7450 7900 60  0000 C CNN
+	1    7450 7900
+	-1   0    0    1   
+$EndComp
+Text GLabel 7250 8050 0    60   Input ~ 0
+5V
+Text GLabel 7250 7750 0    60   Input ~ 0
+GND
+$Comp
+L HC-SR04 U2
+U 1 1 5AFCE360
+P 7450 8450
+F 0 "U2" V 7000 8650 60  0000 C CNN
+F 1 "HC-SR04" V 7100 8500 60  0000 C CNN
+F 2 "" H 7450 8450 60  0000 C CNN
+F 3 "" H 7450 8450 60  0000 C CNN
+	1    7450 8450
+	-1   0    0    1   
+$EndComp
+Text GLabel 7250 8600 0    60   Input ~ 0
+5V
+Text GLabel 7250 8300 0    60   Input ~ 0
+GND
+$Comp
+L HC-SR04 U1
+U 1 1 5AFCE368
+P 7450 9000
+F 0 "U1" V 7000 9200 60  0000 C CNN
+F 1 "HC-SR04" V 7100 9050 60  0000 C CNN
+F 2 "" H 7450 9000 60  0000 C CNN
+F 3 "" H 7450 9000 60  0000 C CNN
+	1    7450 9000
+	-1   0    0    1   
+$EndComp
+Text GLabel 7250 9150 0    60   Input ~ 0
+5V
+Text GLabel 7250 8850 0    60   Input ~ 0
+GND
+Wire Wire Line
+	6550 7300 7250 7300
+Wire Wire Line
+	6500 7400 7250 7400
+Wire Wire Line
+	6450 7850 7250 7850
+Wire Wire Line
+	6400 7950 7250 7950
+Wire Wire Line
+	6300 8500 7250 8500
+Wire Wire Line
+	6250 8950 7250 8950
+Wire Wire Line
+	6200 9050 7250 9050
+Wire Wire Line
+	2000 4650 2000 4400
+Wire Wire Line
+	2100 4550 2100 4400
+Wire Wire Line
+	5950 5750 6550 5750
+Wire Wire Line
+	6550 5750 6550 7300
+Wire Wire Line
+	5950 5850 6500 5850
+Wire Wire Line
+	6500 5850 6500 7400
+Wire Wire Line
+	5950 5950 6450 5950
+Wire Wire Line
+	6450 5950 6450 7850
+Wire Wire Line
+	5950 6050 6400 6050
+Wire Wire Line
+	6400 6050 6400 7950
+Wire Wire Line
+	5950 6150 6350 6150
+Wire Wire Line
+	6350 6150 6350 8400
+Wire Wire Line
+	6350 8400 7250 8400
+Wire Wire Line
+	5950 6250 6300 6250
+Wire Wire Line
+	6300 6250 6300 8500
+Wire Wire Line
+	5950 6350 6250 6350
+Wire Wire Line
+	6250 6350 6250 8950
+Wire Wire Line
+	5950 6450 6200 6450
+Wire Wire Line
+	6200 6450 6200 9050
+$Comp
+L Arduino_Mega2560_Shield XA1
+U 1 1 5ACA580C
+P 4650 5700
+F 0 "XA1" V 4750 5700 60  0000 C CNN
+F 1 "Arduino_Mega2560_Shield" V 4550 5700 60  0000 C CNN
+F 2 "" H 5350 8450 60  0001 C CNN
+F 3 "" H 5350 8450 60  0001 C CNN
+	1    4650 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_DPDT_MSM SW1
+U 1 1 5AFD06C7
+P 9550 1350
+F 0 "SW1" H 9550 1550 50  0000 C CNN
+F 1 "SW_DPDT_MSM" H 9550 750 50  0000 C CNN
+F 2 "" H 9550 1350 50  0001 C CNN
+F 3 "" H 9550 1350 50  0001 C CNN
+	1    9550 1350
+	1    0    0    -1  
+$EndComp
+Text GLabel 9750 1250 2    60   Input ~ 0
+12V
+Text GLabel 9750 1450 2    60   Input ~ 0
+13V8
+Text GLabel 9750 1650 2    60   Input ~ 0
+GND
+Text GLabel 9750 1850 2    60   Input ~ 0
+GND
+$Comp
+L Battery BT1
+U 1 1 5AFD16AE
+P 8750 1550
+F 0 "BT1" H 8850 1650 50  0000 L CNN
+F 1 "12V" H 8850 1550 50  0000 L CNN
+F 2 "" V 8750 1610 50  0001 C CNN
+F 3 "" V 8750 1610 50  0001 C CNN
+	1    8750 1550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3350 3950
+NoConn ~ 3350 4050
+$Comp
+L Jack-DC J1
+U 1 1 5AFC7AE1
+P 10600 1450
+F 0 "J1" H 10600 1660 50  0000 C CNN
+F 1 "Jack-DC" H 10600 1275 50  0000 C CNN
+F 2 "" H 10650 1410 50  0001 C CNN
+F 3 "" H 10650 1410 50  0001 C CNN
+	1    10600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fuse F1
+U 1 1 5AFC87AD
+P 9100 1350
+F 0 "F1" V 9180 1350 50  0000 C CNN
+F 1 "25A" V 9025 1350 50  0000 C CNN
+F 2 "" V 9030 1350 50  0001 C CNN
+F 3 "" H 9100 1350 50  0001 C CNN
+	1    9100 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9250 1350 9350 1350
+Wire Wire Line
+	8950 1350 8750 1350
+Wire Wire Line
+	9350 1750 8750 1750
+$Comp
+L Raspberry_Pi_2_3 J3
+U 1 1 5AFD6145
+P 13400 5950
+F 0 "J3" H 14100 4700 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 13000 6850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x20" H 14400 7200 50  0001 C CNN
+F 3 "" H 13450 5800 50  0001 C CNN
+	1    13400 5950
+	0    1    -1   0   
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 5B0B5BB9
+P 12000 6500
+F 0 "#PWR3" H 12000 6250 50  0001 C CNN
+F 1 "GND" H 12000 6350 50  0000 C CNN
+F 2 "" H 12000 6500 50  0001 C CNN
+F 3 "" H 12000 6500 50  0001 C CNN
+	1    12000 6500
+	-1   0    0    -1  
+$EndComp
+Text GLabel 12700 5050 1    60   Input ~ 0
+RPi_Serial0_TX
+Text GLabel 12600 5050 1    60   Input ~ 0
+RPi_Serial0_RX
+Text GLabel 3350 3550 0    60   Input ~ 0
+RPi_Serial0_TX
+Text GLabel 3350 3650 0    60   Input ~ 0
+RPi_Serial0_RX
+NoConn ~ 12100 6250
+NoConn ~ 12100 6150
+NoConn ~ 12100 6050
+NoConn ~ 12100 5950
+NoConn ~ 12100 5850
+NoConn ~ 12100 5750
+NoConn ~ 12100 5650
+NoConn ~ 12600 6850
+NoConn ~ 12700 6850
+NoConn ~ 13000 6850
+NoConn ~ 13200 6850
+NoConn ~ 13300 6850
+NoConn ~ 13400 6850
+NoConn ~ 13500 6850
+NoConn ~ 13900 6850
+NoConn ~ 14000 6850
+NoConn ~ 14100 6850
+NoConn ~ 14300 5050
+NoConn ~ 14200 5050
+NoConn ~ 14100 5050
+NoConn ~ 13900 5050
+NoConn ~ 13800 5050
+NoConn ~ 13600 5050
+NoConn ~ 13500 5050
+NoConn ~ 13400 5050
+NoConn ~ 13300 5050
+NoConn ~ 13200 5050
+NoConn ~ 13000 5050
+NoConn ~ 12900 5050
+NoConn ~ 14700 5750
+NoConn ~ 14700 5850
+NoConn ~ 14700 6050
+NoConn ~ 14700 6150
+NoConn ~ 5950 6550
+NoConn ~ 5950 6650
+Wire Wire Line
+	6150 9400 13100 9400
+Wire Wire Line
+	6150 9400 6150 7350
+Wire Wire Line
+	6150 7350 5950 7350
+NoConn ~ 13700 6850
+NoConn ~ 13600 6850
+Wire Wire Line
+	6100 9500 13800 9500
+Wire Wire Line
+	6100 9500 6100 7450
+Wire Wire Line
+	6100 7450 5950 7450
+Wire Wire Line
+	13100 9400 13100 6850
+Wire Wire Line
+	13800 9500 13800 6850
+Wire Wire Line
+	12100 6350 12000 6350
+Wire Wire Line
+	12000 6350 12000 6500
+Text Label 12400 9400 0    60   ~ 0
+ENABLE
+Text Label 13400 9500 0    60   ~ 0
+MODE
+$EndSCHEMATC

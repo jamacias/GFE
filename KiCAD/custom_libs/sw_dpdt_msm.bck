@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SW_DPDT_MSM
+D Switch, double pole double throw, center OFF position
+K switch dpdt double-pole double-throw ON-OFF-ON
+$ENDCMP
+#
+#End Doc Library

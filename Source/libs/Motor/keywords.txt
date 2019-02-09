@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map For MOTOR DRIVER
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+motor	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+set	KEYWORD2
+close	KEYWORD2
+motor_delay	KEYWORD2
+motor_micros	KEYWORD2
+motor_millis	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+FORWARD	LITERAL1
+REVERSE	LITERAL1
+A	LITERAL1
+B	LITERAL1

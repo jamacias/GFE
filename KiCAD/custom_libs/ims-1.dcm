@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IMS-1
+D IMS-1 motor driver module
+K IMS-1, motor, driver
+$ENDCMP
+#
+#End Doc Library

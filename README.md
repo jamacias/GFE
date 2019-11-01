@@ -5,7 +5,11 @@ The idea of the project is to be able to monitor a farm by commanding the robot 
 
 The most recent version, iteration 2, is based on ["The bubble rebound obstacle avoidance algorithm"](https://ieeexplore.ieee.org/document/5524302). An array of ultrasonic sensors measure the distance to the objects and if any threat is detected the robot moves navigates on the direction with less density of obstacles. This project is designed to be used in semi-structured environments where the map and the way points that are (most probably) free of obstacles are known. The morphology and motion implemented kept in mind that it is designed to work in a winery with limited space, thus high agility is desired.
 
-Please, refer to Thesis.pdf and the rest of the documentation inside the project itself for more information. Note that some of these are written in Spanish as this is the final project of my B.S. in Electronic Engineering. Nevertheless, all the source code is in English.
+Please, refer to Thesis.pdf, images and the rest of the documentation inside the project itself for more information. Note that some of these are written in Spanish as this is the final project of my BSc. in Electronic Engineering. Nevertheless, all the source code is in English.
+
+<p align="center">
+    <img src="./img/robot3.jpg" height="400"> <img src="./img/electronics_2.jpg" height="400">
+</p>
 
 ## Main features:
 - Manual control of the robot using diamond coordinates with a Quickshot QS-203 joystick.

@@ -8,7 +8,7 @@ The most recent version, iteration 2, is based on ["The bubble rebound obstacle 
 Please, refer to Thesis.pdf, images and the rest of the documentation inside the project itself for more information. Note that some of these are written in Spanish as this is the final project of my BSc. in Electronic Engineering. Nevertheless, all the source code is in English.
 
 <p align="center">
-    <img src="./img/robot3.jpg" height="400"> <img src="./img/electronica_2.jpg" height="400">
+    <img src="./img/robot3.jpg" height="350"> <img src="./img/electronica_2.jpg" height="350">
 </p>
 
 ## Main features:
